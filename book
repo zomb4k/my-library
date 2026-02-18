@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <body>
+    <div class="library-app">
+        <!-- Шапка: Библиотека / Система управления -->
+        <div class="header">
+            <h1>
+                Библиотека
+                <span>Система управления</span>
+            </h1>
+        </div>
+
+        <!-- Навигация: Каталог, Поиск, Мои книги -->
+        <div class="nav-tabs">
+            <span class="nav-item active">Каталог</span>
+            <span class="nav-item">Поиск</span>
+            <span class="nav-item">Мои книги</span>
+        </div>
+
+        <!-- Поисковая строка (плейсхолдер как в задании) -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" placeholder="Кайта книгу, автора или жанр...">
+                <button aria-label="Найти">Найти</button>
+            </div>
+        </div>
+
+        <!-- Сетка книг (в точности данные с картинки) -->
+        <div class="books-grid">
+            <!-- 1984 -->
+            <div class="book-card">
+                <span class="book-status"></span> <!-- Нет статуса на скрине у первой книги -->
+                <div class="book-title">1984</div>
+                <div class="book-author">Джордж Оруэлл</div>
+                <div class="book-genre">Антиутопия</div>
+            </div>
+
+            <!-- Три товарища + статус ВЫДАНА (орфография автора сохранена: Зорик Мария Ромарк) -->
+            <div class="book-card">
+                <span class="book-status status-borrowed">Выдана</span>
+                <div class="book-title">Три товарища</div>
+                <div class="book-author">Зорик Мария Ромарк</div>
+                <div class="book-genre">Проза</div>
+            </div>
+
+            <!-- Мастер и Маргарита -->
+            <div class="book-card">
+                <span class="book-status"></span>
+                <div class="book-title">Мастер и Маргарита</div>
+                <div class="book-author">Михаил Булгаков</div>
+                <div class="book-genre">Классика</div>
+            </div>
+
+            <!-- Алхимик + статус ВЫДАНА -->
+            <div class="book-card">
+                <span class="book-status status-borrowed">Выдана</span>
+                <div class="book-title">Алхимик</div>
+                <div class="book-author">Пауло Коэльо</div>
+                <div class="book-genre">Философия</div>
+            </div>
+
+            <!-- Гарри Поттер (автор: Дж. К. Роузонг — сохранено) -->
+            <div class="book-card">
+                <span class="book-status"></span>
+                <div class="book-title">Гарри Поттер</div>
+                <div class="book-author">Дж. К. Роузонг</div>
+                <div class="book-genre">Фэнтези</div>
+            </div>
+
+            <!-- Убить пересмешника + статус ДОСТУПНЫ (как на скрине — "Доступны") -->
+            <div class="book-card">
+                <span class="book-status status-available">Доступны</span>
+                <div class="book-title">Убить пересмешника</div>
+                <div class="book-author">Хартюр Ли</div>
+                <div class="book-genre">Классика</div>
+            </div>
+
+            <!-- Война и мир (статуса нет на скрине, хотя стоит "Доступны" немного выше, но по скрину это отдельная книга) 
+                 На скриншоте "Война и мир" без явного статуса, но в списке она есть -->
+            <div class="book-card">
+                <span class="book-status"></span>
+                <div class="book-title">Война и мир</div>
+                <div class="book-author">Лев Толстой</div>
+                <div class="book-genre">Классика</div>
+            </div>
+
+            <!-- Джона (так в оригинале: "Джона", автор Франк Горберт) + возможно статус отсутствует -->
+            <div class="book-card">
+                <span class="book-status"></span>
+                <div class="book-title">Джона</div>
+                <div class="book-author">Франк Горберт</div>
+                <div class="book-genre">Фантастика</div>
+            </div>
+        </div>
+
+        <!-- Небольшой комментарий, что все данные сохранены как на картинке (орфография авторов) -->
+        <div class="caption-note">
+            · Интерфейс воспроизводит расположение и статусы с указанного макета ·
+        </div>
+    </div>
+</body>
+</html>
